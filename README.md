@@ -88,7 +88,7 @@ If you'd like to add a watermark over the top of your file, use `watermark` like
 
 VERY IMPORTANT: The watermarked file must be a 44.1k, 2-channel mp3. It needs to be a long file. It'll be truncated to fit the length of your uploaded file.
 
-`output_format` - Accepts a symbol. The only currently available option is the default, `:mp3`.
+`output_format` - Accepts a symbol. The available option is `:mp3`, `:wav`.
 
 `output_options` - Optional. Sox options for the output file (see [ruby-sox](https://github.com/TMXCredit/ruby-sox) and the [SoX documentation](http://sox.sourceforge.net/sox.pdf)). Defaults to:
 
