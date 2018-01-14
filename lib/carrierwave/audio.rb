@@ -41,7 +41,9 @@ module CarrierWave
         "audio/mpeg3"
       when :wav
         "audio/wav"
-      end
+      when :flac
+        "audio/flac"
+      end 
     end
   end
 end

@@ -26,7 +26,7 @@ module CarrierWave
         #
         #   :output_format => Output file format
         #
-        #     Currently only :mp3 or :wav supported
+        #     Currently only :mp3 or :wav or :flac supported
         #     Default is :mp3.
         #
         #   :logger => IOStream to log progress to.
@@ -67,7 +67,7 @@ module CarrierWave
         #
         #   :output_format => (Optional) Output file format
         #
-        #     Currently only :mp3 or :wav supported
+        #     Currently only :mp3 or :wav or :flac supported
         #     Default is :mp3.
         #
         #   :logger => (Optional) IOStream to log progress to.
@@ -128,7 +128,7 @@ module CarrierWave
         end
 
         def sanitized_format format
-          supported_formats = [:mp3, :wav]
+          supported_formats = [:mp3, :wav, :flac]
           if supported_formats.include?(format.to_sym)
             format.to_s
           else
