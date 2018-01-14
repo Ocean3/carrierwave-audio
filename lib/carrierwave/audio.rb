@@ -1,6 +1,6 @@
 require 'carrierwave'
 require 'carrierwave/audio/processor'
-
+#
 module CarrierWave
   module Audio
     module ClassMethods
